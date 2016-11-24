@@ -13,7 +13,7 @@ namespace DuckHunt
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         Texture2D eendSprite;
-
+        Duck duck3;
         Duck duck;
 
         public Game1()
