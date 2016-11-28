@@ -4,6 +4,7 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>c:/users/koos/documents/visual studio 2015/Projects/DuckHunt/DuckHunt/Content/ZwarteEend.png</File>
+    <File>C:/Users/Koos/Documents/Visual Studio 2015/Projects/DuckHunt/DuckHunt/Content/ZwarteEend.png</File>
+    <File>C:/Users/Koos/Documents/Visual Studio 2015/Projects/DuckHunt/DuckHunt/Content/tree.png</File>
   </SourceFiles>
 </SourceFileCollection>

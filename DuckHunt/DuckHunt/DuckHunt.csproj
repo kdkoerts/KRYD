@@ -40,7 +40,10 @@
   <ItemGroup>
     <Compile Include="Duck.cs" />
     <Compile Include="Game1.cs" />
+    <Compile Include="SpriteGameObject.cs" />
+    <Compile Include="GameObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tree.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MonoGame.Framework">
@@ -50,6 +53,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\tree.png" />
     <Content Include="Content\ZwarteEend.png" />
     <Content Include="Icon.ico" />
   </ItemGroup>

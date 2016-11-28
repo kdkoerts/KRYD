@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/Koos/Documents/Visual Studio 2015/Projects/DuckHunt/DuckHunt/Content/ZwarteEend.png</SourceFile>
-  <SourceTime>2016-11-24T14:37:01.7371372+01:00</SourceTime>
-  <DestFile>C:/Users/Koos/Documents/Visual Studio 2015/Projects/DuckHunt/DuckHunt/Content/bin/Windows/ZwarteEend.xnb</DestFile>
-  <DestTime>2016-11-28T10:16:20.1880331+01:00</DestTime>
+  <SourceFile>C:/Users/Koos/Documents/Visual Studio 2015/Projects/DuckHunt/DuckHunt/Content/tree.png</SourceFile>
+  <SourceTime>2016-11-27T15:10:22.5793514+01:00</SourceTime>
+  <DestFile>C:/Users/Koos/Documents/Visual Studio 2015/Projects/DuckHunt/DuckHunt/Content/bin/Windows/tree.xnb</DestFile>
+  <DestTime>2016-11-28T10:16:20.2245587+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2016-03-30T08:36:08+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
