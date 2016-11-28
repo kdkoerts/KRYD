@@ -43,7 +43,7 @@ namespace DuckHunt
         {
             base.Initialize();
 
-            for (int i = 0; i < 500; i++)
+            for (int i = 0; i < 100; i++)
             {
                 treeList.Add(new Tree(r.Next(20, 1900), r.Next(720, 1080), 0, boomSprite));
                
