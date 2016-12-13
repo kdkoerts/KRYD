@@ -10,8 +10,9 @@ namespace DuckHunt
     {
 
         Random r = new Random();
-        Vector2 position = new Vector2();
-        Vector2 velocity = new Vector2();
+        public Vector2 position = new Vector2();
+        public Vector2 velocity = new Vector2();
+        public Rectangle Hitbox = new Rectangle();
         Texture2D eend;
         int timeAlive;
 
@@ -25,7 +26,10 @@ namespace DuckHunt
         public void Update(GameTime gametime)
         {
             position += velocity;
-            if (timeAlive == 120)
+            //TEMP HITBOX
+            Hitbox = new Rectangle((int)position.X, (int)position.Y,48,48);
+     
+            if (timeAlive == 1200)
             { Reset(); }
             timeAlive++;
         }
@@ -36,12 +40,16 @@ namespace DuckHunt
 
         }
 
-        private void Reset()
+        public void Reset()
         {
-            position.X = r.Next(0, 640);
-            position.Y = r.Next(0, 480);
-            velocity.X = (float)r.NextDouble() * 4 - 2;
-            velocity.Y = (float)r.NextDouble() * 4 - 2;
+            //position.X = r.Next(0, 640);
+            // position.Y = r.Next(0, 480);
+            // velocity.X = (float)r.NextDouble() * 4 - 2;
+            // velocity.Y = (float)r.NextDouble() * 4 - 2;
+            position.X = 200;
+            position.Y = 200;
+            velocity.X = 0;
+            velocity.Y = 0;
             timeAlive = 0;
         }
     }

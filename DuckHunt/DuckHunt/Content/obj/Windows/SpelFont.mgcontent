@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SourceFile>C:/Users/Kevin/Documents/KRYD/DuckHunt/DuckHunt/Content/SpelFont.spritefont</SourceFile>
+  <SourceTime>2016-12-13T21:35:57.782018+01:00</SourceTime>
+  <DestFile>C:/Users/Kevin/Documents/KRYD/DuckHunt/DuckHunt/Content/bin/Windows/SpelFont.xnb</DestFile>
+  <DestTime>2016-12-13T21:36:07.3651106+01:00</DestTime>
+  <Importer>FontDescriptionImporter</Importer>
+  <ImporterTime>2016-03-30T08:36:08+02:00</ImporterTime>
+  <Processor>FontDescriptionProcessor</Processor>
+  <ProcessorTime>2016-03-30T08:36:08+02:00</ProcessorTime>
+  <Parameters>
+    <Key>TextureFormat</Key>
+    <Value>Compressed</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>

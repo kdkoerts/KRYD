@@ -4,7 +4,8 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/Koos/Documents/Visual Studio 2015/Projects/DuckHunt/DuckHunt/Content/ZwarteEend.png</File>
-    <File>C:/Users/Koos/Documents/Visual Studio 2015/Projects/DuckHunt/DuckHunt/Content/tree.png</File>
+    <File>C:/Users/Kevin/Documents/KRYD/DuckHunt/DuckHunt/Content/ZwarteEend.png</File>
+    <File>C:/Users/Kevin/Documents/KRYD/DuckHunt/DuckHunt/Content/tree.png</File>
+    <File>C:/Users/Kevin/Documents/KRYD/DuckHunt/DuckHunt/Content/SpelFont.spritefont</File>
   </SourceFiles>
 </SourceFileCollection>

@@ -37,3 +37,9 @@
 /processorParam:TextureFormat=Color
 /build:tree.png
 
+#begin SpelFont.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:TextureFormat=Compressed
+/build:SpelFont.spritefont
+
