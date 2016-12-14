@@ -30,8 +30,8 @@ namespace DuckHunt
             
             graphics = new GraphicsDeviceManager(this);
             //graphics.IsFullScreen = true;
-            graphics.PreferredBackBufferHeight = 1080;
-            graphics.PreferredBackBufferWidth = 1920;
+            graphics.PreferredBackBufferHeight = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height;
+            graphics.PreferredBackBufferWidth = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width;
             Content.RootDirectory = "Content";
 
         }
@@ -49,7 +49,7 @@ namespace DuckHunt
             if(mouse.LeftButton == ButtonState.Pressed)
             {
                 //WTF MUIS PLS?
-                MousePos = new Vector2(mouse.X+60, mouse.Y+70);
+                MousePos = new Vector2(mouse.X, mouse.Y);
                 if(duck.Hitbox.Contains(MousePos))
                 {
                     duck.Reset();
@@ -58,6 +58,13 @@ namespace DuckHunt
             }
         }
 
+        static public Vector2 screen
+        {
+            get
+            {
+                return new Vector2(graphics.GraphicsDevice.Viewport.X, graphics.GraphicsDevice.Viewport.Y);
+            }
+        }
 
        
         protected override void Initialize()

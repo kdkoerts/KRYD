@@ -19,6 +19,7 @@ namespace DuckHunt
         public Duck(Texture2D tex)
         {
             this.eend = tex;
+            Hitbox = new Rectangle((int)position.X, (int)position.Y, tex.Width, tex.Height);
             Reset();
         }
 
@@ -27,9 +28,10 @@ namespace DuckHunt
         {
             position += velocity;
             //TEMP HITBOX
-            Hitbox = new Rectangle((int)position.X, (int)position.Y,48,48);
+            Hitbox.X = (int)position.X;
+            Hitbox.Y = (int)position.Y;
      
-            if (timeAlive == 1200)
+            if (timeAlive == 120)
             { Reset(); }
             timeAlive++;
         }
@@ -42,15 +44,12 @@ namespace DuckHunt
 
         public void Reset()
         {
-            //position.X = r.Next(0, 640);
-            // position.Y = r.Next(0, 480);
-            // velocity.X = (float)r.NextDouble() * 4 - 2;
-            // velocity.Y = (float)r.NextDouble() * 4 - 2;
-            position.X = 200;
-            position.Y = 200;
-            velocity.X = 0;
-            velocity.Y = 0;
+            position.X = r.Next(0, );
+            position.Y = r.Next(0, 480);
+            velocity.X = (float)r.NextDouble() * 4 - 2;
+            velocity.Y = (float)r.NextDouble() * 4 - 2;
             timeAlive = 0;
+
         }
     }
 }
