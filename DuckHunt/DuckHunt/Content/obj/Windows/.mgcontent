@@ -4,13 +4,8 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-<<<<<<< HEAD
     <File>C:/Users/Kevin/Documents/KRYD/DuckHunt/DuckHunt/Content/ZwarteEend.png</File>
     <File>C:/Users/Kevin/Documents/KRYD/DuckHunt/DuckHunt/Content/tree.png</File>
     <File>C:/Users/Kevin/Documents/KRYD/DuckHunt/DuckHunt/Content/SpelFont.spritefont</File>
-=======
-    <File>C:/Users/Koos/Documents/RealDuckHunt/DuckHunt/DuckHunt/DuckHunt/Content/ZwarteEend.png</File>
-    <File>C:/Users/Koos/Documents/RealDuckHunt/DuckHunt/DuckHunt/DuckHunt/Content/tree.png</File>
->>>>>>> master
   </SourceFiles>
 </SourceFileCollection>
