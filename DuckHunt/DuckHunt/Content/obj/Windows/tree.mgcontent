@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<<<<<<< HEAD
   <SourceFile>C:/Users/Kevin/Documents/KRYD/DuckHunt/DuckHunt/Content/tree.png</SourceFile>
   <SourceTime>2016-11-28T15:52:35.7729815+01:00</SourceTime>
   <DestFile>C:/Users/Kevin/Documents/KRYD/DuckHunt/DuckHunt/Content/bin/Windows/tree.xnb</DestFile>
   <DestTime>2016-12-13T21:27:24.5800991+01:00</DestTime>
+=======
+  <SourceFile>C:/Users/Koos/Documents/RealDuckHunt/DuckHunt/DuckHunt/DuckHunt/Content/tree.png</SourceFile>
+  <SourceTime>2016-11-27T15:10:22.5793514+01:00</SourceTime>
+  <DestFile>C:/Users/Koos/Documents/RealDuckHunt/DuckHunt/DuckHunt/DuckHunt/Content/bin/Windows/tree.xnb</DestFile>
+  <DestTime>2016-11-28T15:57:16.6621211+01:00</DestTime>
+>>>>>>> master
   <Importer>TextureImporter</Importer>
   <ImporterTime>2016-03-30T08:36:08+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
