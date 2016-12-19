@@ -44,8 +44,8 @@ namespace DuckHunt
 
         public void Reset()
         {
-            position.X = r.Next(0, );
-            position.Y = r.Next(0, 480);
+            position.X = r.Next(0, GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height);
+            position.Y = r.Next(0, GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width);
             velocity.X = (float)r.NextDouble() * 4 - 2;
             velocity.Y = (float)r.NextDouble() * 4 - 2;
             timeAlive = 0;

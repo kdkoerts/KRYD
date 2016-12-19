@@ -19,6 +19,8 @@ namespace DuckHunt
         Duck duck;
         List<Tree> treeList = new List<Tree>();
         Random r = new Random();
+        public int bullets = 3;
+        public MouseState oldmouse;
 
         //Temp score var en spritefont
         Vector2 MousePos = new Vector2();
@@ -41,30 +43,34 @@ namespace DuckHunt
             Game1 game = new Game1();
             game.Run();
         }
-
+        //Code to shoot ducks with a mouse
         protected void Mouseshooter()
         {
-            MouseState mouse = Mouse.GetState();
-         
-            if(mouse.LeftButton == ButtonState.Pressed)
+            MouseState  mouse = Mouse.GetState();
+            if (bullets > 0)                                   //If statement so that you can only shoot when you have ammo.
             {
-                //WTF MUIS PLS?
-                MousePos = new Vector2(mouse.X, mouse.Y);
-                if(duck.Hitbox.Contains(MousePos))
-                {
-                    duck.Reset();
-                    score += 100;
+                if (mouse.LeftButton == ButtonState.Pressed && oldmouse.LeftButton == ButtonState.Released)    //
+                {                                               //
+                    MousePos = new Vector2(mouse.X, mouse.Y);   // Sets the mouse location to MousePos 
+                    if (duck.Hitbox.Contains(MousePos))         //and checks if the MousePos is inside the hitbox of the duck.
+                    {
+                        duck.Reset();
+                        score += 100;
+                    }
+                    bullets--;
                 }
             }
+            oldmouse = mouse;
+            
         }
-
+        /*
         static public Vector2 screen
         {
             get
             {
                 return new Vector2(graphics.GraphicsDevice.Viewport.X, graphics.GraphicsDevice.Viewport.Y);
             }
-        }
+        }*/
 
        
         protected override void Initialize()
@@ -106,6 +112,11 @@ namespace DuckHunt
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
+            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.R))
+            {
+                score = 0;
+                bullets = 3;
+            }
             Mouseshooter();
             duck.Update(gameTime);
             base.Update(gameTime);
