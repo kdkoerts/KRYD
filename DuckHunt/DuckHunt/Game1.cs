@@ -83,8 +83,12 @@ namespace DuckHunt
             for (int i = 0; i < 10; i++)
             {
                 treeList.Add(new Tree(r.Next(20, 1900), r.Next(720, 1080), 0, boomSprite));
+                treeList.Add(new Tree(r.Next(0, 1920), r.Next(720, 1080), 0, boomSprite));
+
                
             }
+
+            treeList.Sort((Tree t1, Tree t2) => { return t1.depth.CompareTo(t2.depth); });
 
             duck = new Duck(eendSprite);
 
@@ -127,18 +131,26 @@ namespace DuckHunt
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.White);
-            spriteBatch.Begin();
+            spriteBatch.Begin(SpriteSortMode.BackToFront);
             duck.Draw(spriteBatch);
 
+<<<<<<< HEAD
 
             //TEMP draw voor score
             spriteBatch.DrawString(font, score.ToString(), new Vector2(40, 20), Color.Black);
+=======
+>>>>>>> master
 
+            for (int i = treeList.Count -1 ; i >= 0 ; i--)//for (int i = 0; i < treeList.Count; i++)
+            {
+                treeList[i].Draw(spriteBatch);
+            }
+            /*
             foreach (Tree t in treeList)
             {
                 t.Draw(spriteBatch);
             }
-
+            */
             spriteBatch.End();
 
             base.Draw(gameTime);

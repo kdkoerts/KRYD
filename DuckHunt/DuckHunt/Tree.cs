@@ -15,18 +15,23 @@ namespace DuckHunt
 
         public Tree(int posX, int posY, int posZ, Texture2D tex)
         {
-            TreeSpr = tex;
-            drawOffset.X = -TreeSpr.Width / 2;
-            drawOffset.Y = -TreeSpr.Height;
+
             position.X = posX;
             position.Y = posY;
 
+            scaling.X = (position.Y - 720f) / 360f * 0.8f + 0.2f; //Workaround omdat de draw een Vector2 wil
+            scaling.Y = scaling.X;
 
-            
+
+            TreeSpr = tex;
+            drawOffset.X = -TreeSpr.Width * scaling.X / 2;
+            drawOffset.Y = -TreeSpr.Height * scaling.Y;
+           
+
 
             Depth();
-            scaling.X = depth / 100;
-            scaling.Y = depth / 100;
+
+            
 
         }
 
@@ -43,7 +48,7 @@ namespace DuckHunt
         public void Draw(SpriteBatch spriteBatch)
         {
             
-            spriteBatch.Draw(TreeSpr, position + drawOffset, null, null, null, 0, scaling, Color.White, SpriteEffects.None, 0);
+            spriteBatch.Draw(TreeSpr, position + drawOffset, null, null, null, 0, scaling, Color.White, SpriteEffects.None, depth);
         }
     }
 }

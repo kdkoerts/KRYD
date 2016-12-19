@@ -24,8 +24,11 @@ namespace DuckHunt
 
         public void Depth()
         {
-            depth = (position.Y - 720) / 360 * 80 + 20;
-            depth = Math.Abs(depth);
+
+            //treeDrawZ = (position.Y - 720) / 360 * 0.8f + 0.2f;
+
+            depth = 1 - ((position.Y - 720)/360);
+            //depth = Math.Abs(depth);
         }
     }
 }
